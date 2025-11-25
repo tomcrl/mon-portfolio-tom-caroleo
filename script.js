@@ -6,3 +6,10 @@ titre.addEventListener('click', () => {
 titre.textContent = "Titre cliqué !";
 });
 }
+document.body.classList.toggle('dark-mode');
+const themeButton = document.querySelector('#theme-toggle');
+if (themeButton) {
+  themeButton.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+  });
+}
