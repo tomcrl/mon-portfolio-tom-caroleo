@@ -60,14 +60,15 @@
     <section>
         <h2 class="section-title">Contactez-moi</h2>
         <p>Si vous avez des questions ou souhaitez obtenir plus d'informations sur la Radioën, n'hésitez pas à me contacter.</p>
-        <form action="https://formspree.io/f/movezvoa" method="post" enctype="json">
+        <form id="contact-form" action="https://formspree.io/f/movezvoa" method="post" enctype="json">
             <label for="nom">Votre Nom:</label><br>
             <input type="text" id="nom" name="nom" required><br><br>
-            <label for="email">Votre Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="message">Votre Message:</label><br>
-            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+            <label for id="email-input">Votre Email:</label><br>
+            <input type="email-input" id="email-input" name="email-input" required><br><br>
+            <label for id="message-input">Votre Message:</label><br>
+            <textarea id="message-input" name="message-input" rows="4" required></textarea><br><br>
             <button type="submit">Envoyer</button>
+            <p id="form-message"></p>
         </form>
     </section>
 </div>
